@@ -1,0 +1,37 @@
+.button {
+  background: none;
+  border: none;
+  appearance: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 180px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0;
+  border-radius: 3px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.button--primary {
+  background-color: #22a4e0;
+
+  &:hover {
+    background-color: lighten(#22a4e0, 10%);
+  }
+}
+
+.button--secondary {
+  background-color: #949599;
+
+  &:hover {
+    background-color: lighten(#949599, 10%);
+  }
+}

@@ -6,10 +6,10 @@ import columnSplit from '../util/columnSplit';
 import './MasonryGrid.scss';
 
 function MasonryGrid(props) {
-  const { numColumns, photos } = props;
+  const { numColumns, photos, ...rest } = props;
   const columns = columnSplit(photos, numColumns);
   return (
-    <div className="masonry-grid">
+    <div className="masonry-grid" {...rest}>
       {columns.map((column, columnIndex) => {
         return (
           <div className="masonry-grid__column" key={columnIndex}>

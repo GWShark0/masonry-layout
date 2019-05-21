@@ -1,0 +1,46 @@
+@import '../vars';
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($black, 0);
+  transition: background-color 150ms ease-in-out;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  overflow: auto;
+  background: $grey-1;
+  outline: none;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModal__Overlay--after-open {
+  background-color: rgba($black, 0.75);
+}
+
+.ReactModal__Overlay--before-close{
+  background-color: rgba($black, 0);
+}
+
+.ReactModal__Content--after-open {
+  transform: translate3d(0, 0, 0);
+}
+
+.ReactModal__Content--before-close{
+  transform: translate3d(100%, 0, 0);
+}

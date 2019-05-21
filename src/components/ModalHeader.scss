@@ -1,0 +1,13 @@
+@import '../vars';
+
+.modal__header {
+  display: flex;
+  line-height: 60px;
+  justify-content: space-between;
+  background-color: $white;
+  height: 60px;
+  font-size: 14px;
+  padding: 0 30px;
+  pointer-events: none; // non-functional;
+  user-select: none;
+}
