@@ -1,12 +1,12 @@
 @import '../vars';
 
 .modal__footer {
-  background-color: $white;
-  border-top: 1px solid $grey-2;
-  height: 70px;
-  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
+  height: 70px;
+  border-top: 1px solid $grey-2;
+  background-color: $white;
   user-select: none;
 }

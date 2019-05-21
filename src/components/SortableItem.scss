@@ -1,3 +1,5 @@
+@import '../vars';
+
 .grid-item {
   position: relative;
   margin: 8px;
@@ -26,11 +28,7 @@
 
 .grid-item--selected {
   &::before {
-    border-color: #22a4e0;
-  }
-
-  .grid-item__index {
-
+    border-color: $blue;
   }
 }
 
@@ -50,6 +48,9 @@
   width: 100%;
   height: 100%;
   border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid-item__handle {
@@ -59,11 +60,11 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  opacity: 0;
   background-image: url('/icons/move.svg');
-  background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0;
+  background-size: 40%;
   transition: opacity 150ms ease-in-out;
   cursor: grab;
 }
@@ -79,21 +80,21 @@
 }
 
 .grid-item__index {
-  background-color: #22a4e0;
-  color: #ffffff;
-  text-align: center;
-  line-height: 24px;
   font-size: 14px;
   font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  background-color: $blue;
+  color: $white;
   transition: opacity 150ms ease-in-out;
 }
 
 .grid-item__remove {
-  cursor: pointer;
-  background-color: #c53332;
-  color: transparent;
+  background-color: $red;
   background-image: url('/icons/trash.svg');
-  background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 75%;
+  color: transparent;
+  cursor: pointer;
 }

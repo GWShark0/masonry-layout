@@ -14,13 +14,15 @@ const SortableItem = SortableElement((props) => {
   } = props;
   const classes = classNames('grid-item', selected && 'grid-item--selected');
 
+  const imageStyle = {
+    backgroundImage: `url(https://source.unsplash.com/${id}`,
+  }
+
   return (
     <div className={classes} onClick={() => onSelectItem(index)}>
-      <img
+      <div
         className="grid-item__thumb"
-        src={`https://source.unsplash.com/${id}/256x256`}
-        draggable="false"
-        alt=""
+        style={imageStyle}
       />
       <span className="grid-item__handle" />
       <span className="grid-item__index">

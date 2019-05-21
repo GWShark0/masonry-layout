@@ -14,7 +14,10 @@ function App() {
 
   const openModal = () => setIsModelOpen(true);
 
-  const closeModal = () => setIsModelOpen(false);
+  const closeModal = () => {
+    setIsModelOpen(false);
+    setSelectedIndex(-1);
+  };
 
   const removePhoto = (index) => {
     setPhotos(remove(photos, index));

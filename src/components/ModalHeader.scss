@@ -2,12 +2,12 @@
 
 .modal__header {
   display: flex;
-  line-height: 60px;
   justify-content: space-between;
-  background-color: $white;
+  padding: 0 30px;
   height: 60px;
   font-size: 14px;
-  padding: 0 30px;
-  pointer-events: none; // non-functional;
+  line-height: 60px;
+  background-color: $white;
   user-select: none;
+  pointer-events: none; // non-functional;
 }

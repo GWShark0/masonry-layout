@@ -1,16 +1,18 @@
+@import '../vars';
+
 .button {
-  background: none;
-  border: none;
-  appearance: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #ffffff;
+  padding: 0;
   width: 180px;
   height: 46px;
-  line-height: 46px;
-  padding: 0;
-  border-radius: 3px;
+  font-size: 12px;
   font-weight: bold;
+  line-height: 46px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  appearance: none;
   outline: none;
   cursor: pointer;
   transition: background-color 150ms ease-in-out;
@@ -21,10 +23,10 @@
 }
 
 .button--primary {
-  background-color: #22a4e0;
+  background-color: $blue;
 
   &:hover {
-    background-color: lighten(#22a4e0, 10%);
+    background-color: lighten($blue, 10%);
   }
 }
 

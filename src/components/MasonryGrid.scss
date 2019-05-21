@@ -3,8 +3,8 @@
 }
 
 .masonry-grid__column {
-  padding-left: 20px;
   display: inline-block;
+  padding-left: 20px;
   vertical-align: top;
 
   @media screen and (min-width: 48em) {
@@ -17,10 +17,10 @@
 }
 
 .masonry-grid__img {
-  background-color: #ccc;
   margin-bottom: 20px;
   width: 100%;
   vertical-align: middle;
+  background-color: #cccccc;
   transition: opacity 200ms ease-in-out;
 
   &:hover {

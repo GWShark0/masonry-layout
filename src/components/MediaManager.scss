@@ -1,11 +1,11 @@
 .media-manager {
   position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .media-grid {
-  overflow: scroll;
   padding: 22px;
+  overflow: scroll;
 }

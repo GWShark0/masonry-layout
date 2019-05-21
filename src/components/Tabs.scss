@@ -14,15 +14,15 @@
 
 .tab--active {
   position: relative;
-  color: #22a4e0;
+  color: $blue;
 
   &::after {
     content: '';
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
-    background-color: #22a4e0;
     height: 3px;
+    background-color: $blue;
   }
 }
