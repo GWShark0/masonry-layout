@@ -1,5 +1,6 @@
 .masonry-grid {
   padding: 20px 20px 0 0;
+  user-select: none;
 }
 
 .masonry-grid__column {
@@ -13,17 +14,5 @@
 
   @media screen and (min-width: 60em) {
     width: 33.33%;
-  }
-}
-
-.masonry-grid__img {
-  margin-bottom: 20px;
-  width: 100%;
-  vertical-align: middle;
-  background-color: #cccccc;
-  transition: opacity 200ms ease-in-out;
-
-  &:hover {
-    opacity: 0.75;
   }
 }

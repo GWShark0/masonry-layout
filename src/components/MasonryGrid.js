@@ -1,6 +1,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from './Image';
 import columnSplit from '../utils/columnSplit';
 
 import './MasonryGrid.scss';
@@ -13,18 +14,7 @@ function MasonryGrid(props) {
       {columns.map((column, columnIndex) => {
         return (
           <div className="masonry-grid__column" key={columnIndex}>
-            {column.map((photo, photoIndex) => {
-              const { id, url } = photo;
-              return (
-                <img
-                  className="masonry-grid__img"
-                  src={url}
-                  alt=""
-                  data-index={photoIndex}
-                  key={id}
-                />
-              );
-            })}
+            {column.map(photo => <Image {...photo} key={photo.id} />)}
           </div>
         );
       })}
