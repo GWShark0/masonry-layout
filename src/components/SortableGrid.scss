@@ -1,0 +1,16 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid--sorting {
+  cursor: grabbing;
+
+  .grid-item:not(.grid-item--helper) {
+    pointer-events: none;
+
+    .grid-item__index {
+      opacity: 0;
+    }
+  }
+}

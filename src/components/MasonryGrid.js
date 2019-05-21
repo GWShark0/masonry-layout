@@ -1,7 +1,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import columnSplit from '../util/columnSplit';
+import columnSplit from '../utils/columnSplit';
 
 import './MasonryGrid.scss';
 
